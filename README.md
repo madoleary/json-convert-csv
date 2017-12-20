@@ -1,1 +1,1 @@
-# json-convert-csv
+This is a script that converts JSON files to CSV format. It accounts for nested hashes, as well. The spec directory contains a test for the method in the script that runs the conversion using the helper methods. The file "users.json" is run through the converter and outputted to "test.csv," which is compared to "compare.csv" as a benchmark for what the output should be. 

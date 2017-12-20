@@ -2,8 +2,6 @@ require 'open-uri'
 require 'json'
 require 'csv'
 
-module JSONConverter
-
 # flattens the nested hashes to comport with csv structure
 def flatten_hash(hash)
   if hash.instance_of? Hash
@@ -61,10 +59,7 @@ def write_file(file_path, output)
   end
 end
 
-end
-
-# an example using the data provided in the test document
-puts write_file('./users.json', './test.csv')
+# puts write_file('./users.json', './test.csv')
 
 
 
